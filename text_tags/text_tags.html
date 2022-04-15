@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="text_tags.css">
+</head>
+<body>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <h3>제목3</h3>
+    <h4>제목4</h4>
+    <h5>제목5</h5>
+    <h6>제목6</h6>
+    <p>첫번째 단락 Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quis soluta atque architecto impedit dicta tempora minus laboriosam qui illum asperiores facere, enim blanditiis quaerat deserunt velit, aspernatur aperiam dolorum?</p>
+    <p>두번째 단락 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dignissimos quod incidunt, excepturi amet ad! Numquam, iure qui harum ipsum, rem soluta consectetur molestias quidem illo molestiae eos quia architecto.</p>
+    <blockquote>인용 (블록) Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptatem reprehenderit earum atque, optio beatae, nam error, quae ad porro dolore at ipsa laborum esse fugiat suscipit laudantium numquam molestiae.</blockquote>
+    <hr>
+    <pre>입력하는 그대로, 띄어          쓰기</pre>
+    <pre>
+        <code>
+            print("Hello, world!")
+        </code>
+    </pre>
+    <ul>
+        <li><strong>굵게 강조할 텍스트</strong></li>
+        <li><b>굵게 표시할 텍스트</b></li>
+        <li><em>이탤릭체로 강조할 텍스트</em></li>
+        <li><i>이탤릭체로 표시할 텍스트 </i></li>
+    </ul>
+    <q>인용 (인라인) Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate atque totam molestias repudiandae natus accusantium esse quia aliquam, ad, doloremque nulla provident est ab facilis! Recusandae est ea dolor veniam.</q>
+    <mark>형광펜</mark>
+    <hr>
+    <span>span tag 안에 작성된 첫번째 문장입니다.</span>
+    <span>span tag 안에 작성된 두번째 문장입니다.</span>
+    <span>span tag 안에 작성된 세번째 문장입니다.</span>
+    <br>
+    <p><abbr title="Hyper Text Markup Language">HTML</abbr>위에 커서를 올려보세요.</p>
+    <p>나는 <u>떡볶이</u>를 좋아해.</p>
+    <p>너랑 내 앞에 놓인 길엔 희극이 더 많았음 좋겠다. - 드라마, <cite>'스물다섯 스물하나'</cite></p>
+    <p>종료하려면, <kbd>Esc</kbd>키를 누르세요.</p>
+    <hr>
+    <div>
+        <h2>순서가 없는 목록</h2>
+        <h3>내가 좋아하는 동물</h3>
+        <ul>
+            <li>고양이</li>
+            <li>강아지</li>
+            <li>토끼</li>
+        </ul>
+        <h2>순서가 있는 목록</h2>
+        <h3>라면 끓이기</h3>
+        <ol>
+            <li>물을 넣는다.</li>
+            <li>스프와 건더기를 넣는다.</li>
+            <li>면을 넣는다.</li>
+            <li>약 5분간 끓인 뒤, 맛있게 먹는다</li>
+        </ol>
+        <h2>두가지 모두 활용하기</h2>
+        <h3>1박 2일 여행 일정</h3>
+        <ul>
+            <li>1일차
+                <ol type="a">
+                    <li>장소 A</li>
+                    <li>장소 B</li>
+                    <li>장소 C</li>
+                </ol>
+            </li>
+            <li>2일차
+                <ol type="a" start="4">
+                    <li>장소 D</li>
+                    <li>장소 E</li>
+                </ol>
+            </li>
+        </ul>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <h2>dl : description list (제목 - 설명 구성)</h2>
+        <h3>세종대왕 국어사전</h3>
+        <dl>
+            <dt>호기롭다</dt>
+            <dd>씩씩하고 호방한 기상이 있다.</dd>
+            <dt>아름답다</dt>
+            <dd>보이는 대상이나 음향, 목소리 따위가 균형과 조화를 이루어 눈과 귀에 즐거움과 만족을 줄 만하다.</dd>
+            <dd>하는 일이나 마음씨 따위가 훌륭하고 갸륵한 데가 있다.</dd>
+        </dl>
+    </div>
+    <hr>
+    <div>
+        <table>
+            <tr>
+                <th>제목1</th>
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+            </tr>
+            <tr>
+                <th>제목2</th>
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+            </tr>
+        </table>
+        <table>
+            <caption>인적 사항</caption>
+            <tr>
+                <th>이름</th>
+                <td></td>
+                <th>전화번호</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+    </div>
+    <figure>
+        <figcaption>
+            요일별 공부 계획
+        </figcaption>
+        <p id="plan-desc">이과 고등학생의 요일별 공부 계획표입니다.</p>
+        <table aria-describedby="plan-desc">
+            <tr>
+                <th>요일</th>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+            </tr>
+            <tr>
+                <th>과목</th>
+                <td colspan="2">수학</td>
+                <td colspan="2">과학</td>
+                <td>미술</td>
+            </tr>
+        </table>
+    </figure>
+    <table>
+        <caption></caption>
+        <thead>
+            <tr>
+                <td>구분</td>
+                <td>제품명</td>
+                <td>대여 가능</td>
+                <td>사은품 제공</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>소형</td>
+                <td>드라이기</td>
+                <td rowspan="3">YES</td>
+                <td rowspan="4">YES</td>
+            </tr>
+            <tr>
+                <td rowspan="2">중형</td>
+                <td>가습기</td>
+            </tr>
+            <tr>
+                <td>제습기</td>
+            </tr>
+            <tr>
+                <td>대형</td>
+                <td>에어컨</td>
+                <td>NO</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">4월 30일까지 10% 행사중입니다.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
